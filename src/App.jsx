@@ -1,22 +1,28 @@
-import { Navbar } from "./components/Navbar";
-import './App.css';
-import './index.css'
+import { Header } from "./components/Header";
+import { Card } from '@mantine/core';
+
+import Porfile from "./components/Porfile";
+import { PreviewClass } from "./components/PreviewClass";
+import { NextEvents } from "./components/NextEvents";
+import { Gallery } from "./components/Gallery";
+import { Code } from "./components/Code";
+
 
 function App() {
-
-
   return (
     <>
-       
-      <Navbar/>
-      <Container padding="md" size="lg" style={{ display: 'flex' }}>
-        <div style={{ flex: 1, padding: '1rem' }}>
-          <Paper padding="md" shadow="xs">
-            <Text align="center" size="xl">Bienvenido a mi aplicacion</Text>
-            <Button>Hello Mantine</Button>
-          </Paper>
-        </div>
-      </Container>
+      <Header/>
+      <Card className="container">
+        <Porfile/>
+        <PreviewClass/>
+      </Card>
+      <Card className="container">
+        <NextEvents/>
+        <Gallery/>
+        <Code/>
+      </Card>
+
+      
     </>
   );
 }
