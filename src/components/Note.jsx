@@ -1,8 +1,9 @@
-export const Note = () =>
-{
-    return(
-        <>
-            <h2>Aquí va lo de notas </h2>
-        </>
-    )
-}
+const Note = () => {
+  return (
+    <>
+      <h2>Aquí va lo de notas </h2>
+    </>
+  );
+};
+
+export default Note;

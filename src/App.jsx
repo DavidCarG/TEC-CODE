@@ -1,30 +1,11 @@
-import { Header } from "./components/Header";
-import { Card } from '@mantine/core';
+import React from "react";
 
-import Porfile from "./components/Porfile";
-import { PreviewClass } from "./components/PreviewClass";
-import { NextEvents } from "./components/NextEvents";
-import { Gallery } from "./components/Gallery";
-import { Code } from "./components/Code";
-
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Header/>
-      <Card className="container">
-        <Porfile/>
-        <PreviewClass/>
-      </Card>
-      <Card className="container">
-        <NextEvents/>
-        <Gallery/>
-        <Code/>
-      </Card>
-
-      
-    </>
+    <div>
+      <h1>Hello, world!</h1>
+    </div>
   );
-}
+};
 
 export default App;

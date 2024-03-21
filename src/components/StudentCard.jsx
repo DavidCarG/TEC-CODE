@@ -1,6 +1,6 @@
 import { Card, Avatar, Text } from "@mantine/core";
 
-const Cards = () => {
+const StudentCard = () => {
   return (
     <>
       <Card className="card">
@@ -21,4 +21,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default StudentCard;
