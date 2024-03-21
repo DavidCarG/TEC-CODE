@@ -23,7 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# Documentation files
-*.txt
-*.md
-
