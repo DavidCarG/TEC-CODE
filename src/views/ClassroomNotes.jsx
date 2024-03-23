@@ -1,7 +1,7 @@
 const ClassRoomNotes = () => {
   return (
     <>
-      <div>Hola sampablo!</div>
+      <div>Hola NAVBAR PRUEBA!</div>
     </>
   );
 };
