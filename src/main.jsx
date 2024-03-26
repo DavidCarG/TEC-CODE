@@ -7,12 +7,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from '@/views/ErrorPage.jsx';
 import ClassRoomNotes from './views/ClassroomNotes';
 import '@mantine/carousel/styles.css';
+import './output.css';
 const router = createBrowserRouter([
   { path: '/', element: <Home />, errorElement: <ErrorPage /> },
   {
     path: '/class-notes',
     element: <ClassRoomNotes />,
-    errorElement: <ErrorPage />,
   },
 ]);
 
