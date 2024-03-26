@@ -7,3 +7,4 @@ export { default as Profile } from "./Profile";
 export { default as Navbar } from "./Navbar";
 export { default as StudentCard } from "./StudentCard";
 export { default as Note } from "./Note";
+export { default as NavigationHome } from "./NavigationHome";

@@ -1,13 +1,11 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import Home from "@/views/Home.jsx";
-import "@/styles/index.css";
-import { MantineProvider } from "@mantine/core";
-import * as ReactDOM from "react-dom/client";
+import '@mantine/core/styles.css';
+import * as Mantine from '@mantine/core';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "@/views/ErrorPage.jsx";
 import ClassRoomNotes from "./views/ClassroomNotes";
-
 const router = createBrowserRouter([
   { path: "/", element: <Home />, errorElement: <ErrorPage /> },
   {
@@ -19,8 +17,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <MantineProvider>
+    <Mantine.MantineProvider>
       <RouterProvider router={router} />
-    </MantineProvider>
+    </Mantine.MantineProvider>
   </React.StrictMode>
 );
