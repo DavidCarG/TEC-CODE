@@ -6,6 +6,7 @@ import * as Mantine from '@mantine/core';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "@/views/ErrorPage.jsx";
 import ClassRoomNotes from "./views/ClassroomNotes";
+import '@mantine/carousel/styles.css';
 const router = createBrowserRouter([
   { path: "/", element: <Home />, errorElement: <ErrorPage /> },
   {
