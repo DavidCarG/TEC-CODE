@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import { AppShell, Burger, Group, UnstyledButton, ThemeIcon, useMantineColorScheme } from '@mantine/core';
+import {
+  AppShell,
+  Burger,
+  Group,
+  UnstyledButton,
+  ThemeIcon,
+  useMantineColorScheme,
+} from '@mantine/core';
 import { IconHeart, IconSun, IconMoon } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './MobileNavbar.module.css';
@@ -14,12 +21,15 @@ function Navbar() {
 
   return (
     <AppShell
-    header={{ height: 60 }}
-      navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
+      header={{ height: 60 }}
+      navbar={{
+        width: 300,
+        breakpoint: 'sm',
+        collapsed: { desktop: true, mobile: !opened },
+      }}
       padding="md"
     >
       <AppShell.Header>
-      
         <Group h="100%" px="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
           <Group justify="space-between" style={{ flex: 1 }}>
@@ -32,10 +42,16 @@ function Navbar() {
               <IconHeart size={30} />
             </ThemeIcon>
             <Group ml="xl" gap={20} visibleFrom="sm">
-              <UnstyledButton className={classes.control}>Recursos</UnstyledButton>
+              <UnstyledButton className={classes.control}>
+                Recursos
+              </UnstyledButton>
               <UnstyledButton className={classes.control}>Fotos</UnstyledButton>
-              <UnstyledButton className={classes.control}>Avisos</UnstyledButton>
-              <UnstyledButton className={classes.control}>Algoritmos</UnstyledButton>
+              <UnstyledButton className={classes.control}>
+                Avisos
+              </UnstyledButton>
+              <UnstyledButton className={classes.control}>
+                Algoritmos
+              </UnstyledButton>
               <UnstyledButton onClick={handleColorSchemeChange}>
                 {colorScheme === 'dark' ? <IconMoon /> : <IconSun />}
               </UnstyledButton>
@@ -50,8 +66,8 @@ function Navbar() {
         <UnstyledButton className={classes.control}>Avisos</UnstyledButton>
         <UnstyledButton className={classes.control}>Algoritmos</UnstyledButton>
         <UnstyledButton onClick={handleColorSchemeChange}>
-                {colorScheme === 'dark' ? <IconMoon /> : <IconSun />}
-              </UnstyledButton>
+          {colorScheme === 'dark' ? <IconMoon /> : <IconSun />}
+        </UnstyledButton>
       </AppShell.Navbar>
     </AppShell>
   );

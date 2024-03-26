@@ -1,4 +1,4 @@
-import { Card, Avatar, Text } from "@mantine/core";
+import { Card, Avatar, Text } from '@mantine/core';
 
 const Profile = () => {
   return (

@@ -7,12 +7,9 @@ import {
   Code,
   Navbar,
   NavigationHome,
-} from "@/components";
-import { AppShell } from "@mantine/core";
+} from '@/components';
+import { AppShell } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-
-
-
 
 const Home = () => {
   const [opened] = useDisclosure();
@@ -21,11 +18,9 @@ const Home = () => {
       <Navbar />
 
       <AppShell.Main>
-      <NavigationHome />
-       
+        <NavigationHome />
       </AppShell.Main>
-      
-      </AppShell>
+    </AppShell>
   );
 };
 
