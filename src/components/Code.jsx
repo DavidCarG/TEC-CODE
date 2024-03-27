@@ -1,4 +1,4 @@
-import { Card, Text, BackgroundImage, Box } from "@mantine/core";
+import { Card, Text, BackgroundImage, Box } from '@mantine/core';
 
 const Code = () => {
   return (

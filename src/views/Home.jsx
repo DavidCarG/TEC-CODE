@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Cards,
   Profile,
@@ -7,25 +6,21 @@ import {
   Gallery,
   Code,
   Navbar,
-} from "@/components";
-import "@/styles/App.css";
-import "@/styles/index.css";
-import "@/styles/Navbar.css";
+  NavigationHome,
+} from '@/components';
+import { AppShell } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 
 const Home = () => {
+  const [opened] = useDisclosure();
   return (
-    <>
+    <AppShell>
       <Navbar />
-      <Cards className="container">
-        <Profile />
-        <PreviewClass />
-      </Cards>
-      <Cards className="container">
-        <NextEvents />
-        <Gallery />
-        <Code />
-      </Cards>
-    </>
+
+      <AppShell.Main>
+        <NavigationHome />
+      </AppShell.Main>
+    </AppShell>
   );
 };
 

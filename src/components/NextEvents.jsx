@@ -1,4 +1,4 @@
-import { Text, BackgroundImage, Box, Card } from "@mantine/core";
+import { Text, BackgroundImage, Box, Card } from '@mantine/core';
 
 const NextEvents = () => {
   return (
